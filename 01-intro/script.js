@@ -1,1 +1,1 @@
-const matt = 7
+alert('Hello form JS file')
