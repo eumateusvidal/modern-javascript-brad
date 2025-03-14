@@ -1,35 +1,14 @@
-const fruits = ['apple', 'pear', 'orange'];
+const arr = [1, 2, 3, 4, 5];
 
-const berries = ['strawberry', 'blueberry', 'rasberry'];
+arr.reverse();
+arr.push(0);
+arr.unshift(6);
 
-// fruits.push(berries)
+console.log(arr)
 
-// x = fruits[3][1];
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [5, 6, 7, 8, 9, 10];
 
-const allFruits = [fruits, berries];
+// arr3 = [...arr1, ...arr2];
 
-x = allFruits[1][0];
-
-x = fruits.concat(berries);
-
-//Spread Operator (...)
-x = [...fruits, ...berries];
-
-//FLatten Arrays
-const arr = [1, 2, 3, 4, 5, 6, 7, 8]
-
-x = arr.flat();
-
-//Static Methods on Array Object
-
-x = Array.isArray(fruits);
-
-x = Array.from('12345');
-
-const a = 1
-const b = 2
-const c = 3
-
-x = Array.of(a, b, c)
-
-console.log(x);
+// console.log(arr3);
