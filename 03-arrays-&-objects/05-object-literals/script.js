@@ -29,6 +29,11 @@ person.greet = function () {
 
 person.greet();
 
-x = person;
+const person2 = {
+  'first name': 'Brad',
+  'last name': 'Traversy',
+}
+
+x = person2['first name']
 
 console.log(x);
