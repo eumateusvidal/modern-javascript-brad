@@ -38,3 +38,8 @@ console.log(loginUser({
     name: 'Sara',
   })
 );
+
+//Arrays as params
+function getRandom(arr) {
+  const ramdomIndex = Math.floor(Math.radom)
+}
