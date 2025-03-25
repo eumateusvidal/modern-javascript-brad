@@ -1,23 +1,19 @@
 function sayHello () {
-  console.log('Hello World');
+  console.log ('Hello World');
 }
 
-sayHello(); //Calling a function
+sayHello();
 
 function add(num1, num2) {
   console.log(num1 + num2);
-} //Declaring a function
+}
 
-add(5, 10)
+add (10, 7);
 
 function subtract(num1, num2) {
   return num1 - num2;
 }
 
-subtract(10, 2)
+const result = subtract (20, 2);
 
-const result = subtract(10,2)
-
-console.log(result, subtract(20, 5))
-
-console.log(result);
+console.log(result, subtract(20, 5));
