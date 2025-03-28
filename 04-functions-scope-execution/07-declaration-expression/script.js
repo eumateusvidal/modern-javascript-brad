@@ -26,3 +26,14 @@ function myNameIs(value) {
 
 console.log(myNameIs('Matt Vidal'))
 
+const myName = function(name) {
+  return 'My name is: ' + name;
+}
+
+console.log(myName('Michael Jackson'))
+
+function yourNumber(number) {
+  return 'Your numbers is ' + number
+}
+
+console.log(yourNumber(7))
