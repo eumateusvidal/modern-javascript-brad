@@ -1,12 +1,16 @@
+//Challenge 1
 
+// function getCelsius(value) {
+//   return value - 30 / 2;
+// }
 
-(function () {
-  const user = 'John';
-  console.log(user);
-  const hello = () => console.log('Hello from the IIFE');
-  hello();
-}) ();
+// console.log(`The temperature is ${getCelsius(32)}`)
 
-(function (name) {
-  console.log('Hello ' + name)
-})('Shawn');
+function getCelsius(f) {
+  const celcius = (f - 32) * 5/9;
+  return celcius
+}
+
+const getCelsius2 = (f) => (f - 32) * 5/9; 
+
+console.log(getCelsius2(32))
