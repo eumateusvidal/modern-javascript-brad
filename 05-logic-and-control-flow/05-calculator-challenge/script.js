@@ -1,30 +1,24 @@
-const d = new Date(2022, 7, 10, 13, 0, 0);
-const month = d.getMonth();
-const hour = d.getHours();
+function calculator (num1, num2, operator) {
+  let result;
 
-switch (month) {
-  case 1:
-    console.log('It is January');
-    break;
-  case 2: 
-    console.log('It is February');
-    break;
-  case 3: {
-    console.log('It is March')
-    break;
+  switch(operator){
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    case '/':
+      result = num1 / num2;
+      break;
+    default:
+      result = 'invalid operator';
   }
-  default:{
-    console.log('It is not Jan, Feb, Mar')
-  }
+  console.log(result);
+  return result;
 }
 
-switch (true) {
-  case hour < 12:
-    console.log('Good Morning');
-    break;
-  case hour < 18:
-    console.log('Good Afternoon');
-    break;
-  case hour < 20:
-    console.log('Good Night');
-}
+calculator(5, 2, '/')
