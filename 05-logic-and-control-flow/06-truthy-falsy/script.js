@@ -1,24 +1,7 @@
-function calculator (num1, num2, operator) {
-  let result;
+const email = 'test@teste.com'
 
-  switch(operator){
-    case '+':
-      result = num1 + num2;
-      break;
-    case '-':
-      result = num1 - num2;
-      break;
-    case '*':
-      result = num1 * num2;
-      break;
-    case '/':
-      result = num1 / num2;
-      break;
-    default:
-      result = 'invalid operator';
-  }
-  console.log(result);
-  return result;
+if (email) {
+  console.log('You passed is an email');
 }
 
-calculator(5, 2, '/')
+console.log(Boolean(email))
