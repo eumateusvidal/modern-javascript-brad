@@ -34,4 +34,4 @@ const auth = true;
 
 const redirect = auth ? (alert('Welcome to the dashboard'), '/dashboard') : (alert('Access denied'), '/login')
 
-console.log(redirect)
+console.log(redirect);
