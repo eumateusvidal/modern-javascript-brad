@@ -33,3 +33,5 @@ if (x) {
 }
 
 console.log(Boolean(x));
+
+// Truthy and Falsy caveats
