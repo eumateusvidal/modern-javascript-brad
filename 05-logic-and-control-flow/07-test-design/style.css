@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f7fc;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #d1d1d1;
+}
+
+.card button {
+  background: linear-gradient(45deg, #f06, #00f);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: linear-gradient(45deg, #00f, #f06);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.message {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+.tools span {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 6px 12px;
+  margin: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+.card:nth-child(1) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card:nth-child(2) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card:nth-child(3) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.card:nth-child(4) {
+  background: rgba(255, 255, 255, 0.2);
+}
