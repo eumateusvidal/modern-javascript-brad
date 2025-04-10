@@ -16,7 +16,7 @@
 //   }
 // }
 
-// // Nest loops
+// Nest loops
 
 // for (let i = 1; i <= 10; i++) {
 //   console.log('Number ' + i)
@@ -30,18 +30,18 @@
 
 const names = ['Brad', 'Sam', 'Sara', 'John', 'John', 'Tim'];
 
-// for (let i = 0; i < names.length; i++) {
-//   if (i === 2) {
-//     console.log(names[i] + ' is the best')
-//   } else {
-//     console.log(names[i])
-//   }
-// }
-
 for (let i = 0; i < names.length; i++) {
-  if (names[i] === 'John') {
+  if (i === 2) {
     console.log(names[i] + ' is the best')
   } else {
     console.log(names[i])
   }
 }
+
+// for (let i = 0; i < names.length; i++) {
+//   if (names[i] === 'John') {
+//     console.log(names[i] + ' is the best')
+//   } else {
+//     console.log(names[i])
+//   }
+// }
