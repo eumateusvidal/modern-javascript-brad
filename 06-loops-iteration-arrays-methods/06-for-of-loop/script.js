@@ -1,43 +1,35 @@
-// // For loop
+// Loop through arrays
 
-// for (let i = 1; i <= 100; i++) {
-//   if (i % 3 === 0) {
-//     console.log('Fizz')
-//   } else {
-//     console.log(i);
-//   }
+const itens = ['book', 'table', 'chair', 'kite'];
+const users = [
+  {name: 'Brad'},
+  {name: 'Kate'},
+  {name: 'Steve'},
+]
+
+// for (const item of itens) {
+//   console.log(item);
 // }
 
-// For loop
+for (const user of users) {
+  console.log(user.name)
+}
 
-// for (let i = 1; i <= 100; i++) {
-//   if (i % 15 === 0) {
-//     console.log ('FizzBuzz')
-//   }
-//   else if (i % 3 === 0) {
-//     console.log('Fizz')
-//   } else if (i % 5 === 0 ) {
-//     console.log('Buzz');
-//   } else {
-//     console.log(i)
-//   }
-// }
+// Loop over strings
 
-// let j = 1;
+const str = 'Hello world';
 
-// while (j <= 100) {
-//   if (j % 15 === 0) {
-//     console.log ('FizzBuzz')
-//   }
-//   else if (j % 3 === 0) {
-//     console.log('Fizz')
-//   } else if (j % 5 === 0 ) {
-//     console.log('Buzz');
-//   } else {
-//     console.log(j)
-//   }
+for (const letter of str) {
+  console.log(letter)
+}
 
-//   j++;
+//Loops over Maps
 
-//   console.log(j)
-// }
+const map = new Map();
+
+map.set('Name', 'John');
+map.set('age', 30);
+
+for (const [key, value] of map) {
+  console.log(key,value)
+}
