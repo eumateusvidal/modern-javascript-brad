@@ -1,27 +1,17 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// const numbers = [1, 2, 3, 4, 5];
 
-// const evenNumbers = numbers.filter(function(number) {
-//   return number % 2 === 0;
-// });
+// const doubledNumbers = numbers.map((number) => `Number ${number}`);
 
-//Short version
+// console.log(doubledNumbers);
 
-// const evenNumbers = numbers.filter((number) => number % 2 === 0)
+// // Same with forEach
 
-//Same with forEach
-
-
-// const evenNumbers = [];
-
+// const doubledNumbers2 = [];
 // numbers.forEach((number) => {
-//   if (number % 2 === 0) {
-//     evenNumbers.push(number);
-//   }
+//   doubledNumbers2.push(number * 4);
 // });
 
-// console.log(evenNumbers);
-
-// Get only retail companies
+// console.log(doubledNumbers2)
 
 const companies = [
   {name: 'Company One', category: 'Finance', start: 1981, end: 2004},
@@ -35,14 +25,12 @@ const companies = [
   {name: 'Company Nine', category: 'Retail', start: 1981, end: 1989},
 ];
 
-//Get only companies
+// Create an array of company names
 
-const retailCompanies = companies.filter((company) => company.category === 'Retail');
+const companyNames = companies.map((company) => company.start && company.end);
 
-// Get companies that started in or after 1980 and ended in or before 2005
-const earlyCompanies = companies.filter((company) => company.filter >= 1980 && company.end <= 2005)
+console.log(companyNames)
 
-// Get companies that lasted 10 years or more
-const longCompanies = companies.filter((company) => company.end - company.start >= 10 )
+const companyInfo = companies.map((company) => company.name + ' - '+ company.category)
 
-console.log(longCompanies);
+console.log(companyInfo)
