@@ -1,17 +1,18 @@
-// const numbers = [1, 2, 3, 4, 5];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// const doubledNumbers = numbers.map((number) => `Number ${number}`);
+// const doubledNumbers = numbers.map((number) => 'The doubled number is ' + number * 2); 
 
 // console.log(doubledNumbers);
 
-// // Same with forEach
+// Same with for each
 
 // const doubledNumbers2 = [];
+
 // numbers.forEach((number) => {
-//   doubledNumbers2.push(number * 4);
+//   doubledNumbers2.push(number * 2)
 // });
 
-// console.log(doubledNumbers2)
+// console.log(doubledNumbers2);
 
 const companies = [
   {name: 'Company One', category: 'Finance', start: 1981, end: 2004},
@@ -25,12 +26,38 @@ const companies = [
   {name: 'Company Nine', category: 'Retail', start: 1981, end: 1989},
 ];
 
-// Create an array of company names
+// const companyName = companies.map((company) => company.name); 
 
-const companyNames = companies.map((company) => company.start && company.end);
+// console.log(companyName)
 
-console.log(companyNames)
+// const companyInfo = companies.map((company) => `The company name is ${company.name} with the category: ${company.category}`);
 
-const companyInfo = companies.map((company) => company.name + ' - '+ company.category)
+// console.log(companyInfo);
 
-console.log(companyInfo)
+
+// //Create an array with just company and category
+// const companyInfo = companies.map((company) => {
+//   return {
+//     name: company.name,
+//     category: company.category
+//   }
+// });
+
+// console.log(companyInfo);
+
+
+// // Create an array of objects with the name and the length of each company years
+// const companyYears = companies.map((companies) => {
+//   return {
+//     name: companies.name,
+//     length: companies.end - companies.start + ' years.',
+//   }
+// });
+
+// console.log(companyYears);
+
+const evenDouble = numbers
+  .filter((number) => number % 2 === 0)
+  .map((number) => number * 2)
+  
+console.log(evenDouble);
