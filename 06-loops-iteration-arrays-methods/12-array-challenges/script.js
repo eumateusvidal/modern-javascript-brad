@@ -57,6 +57,6 @@ const positiveSum = numbers
 
  const cWords = words.map((word) => {
   return word[0].toLocaleUpperCase() + word.slice(1, word.length);
- })
+ });
 
  console.log(cWords)
