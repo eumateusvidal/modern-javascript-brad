@@ -1,29 +1,11 @@
-// querySelectorAll()
+// Get child elements
+let output;
 
-const listItems = document.querySelectorAll('.item');
-console.log(listItems[1].innerText);
+const parent = document.querySelector('.parent');
+output = parent.children;
 
-// listItems[1].style.color = 'red'
+output = parent.children[1].innerText;
+output = parent.children[1].className;
+output = parent.children[1].nodeName;
 
-// listItems.forEach((item, index) => {
-//   item.style.color = 'red'
-
-//   if (index === 1) {
-//     item.remove;
-//   }
-
-//   if (index === 0) {
-//     item.html = `Mango
-//           <button class="remove-item btn-link text-red">
-//             <i class="fa-solid fa-xmark"></i>
-//           </button>`
-//   }
-// });
-
-const listItems2 = document.getElementsByClassName('item')
-
-const listItemsArray = Array.from(listItems2);
-
-listItemsArray.forEach((item) => {
-  console.log(item.innerText);
-});
+console.log(output);
