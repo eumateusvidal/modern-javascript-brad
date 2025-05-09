@@ -42,7 +42,7 @@ function insertBeforeItem() {
 insertElement();
 insertText();
 insertHTML();
-insertBeforeItem();
+insertBeforeItem();as
 
 /* 
 
