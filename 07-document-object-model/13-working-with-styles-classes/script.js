@@ -4,12 +4,15 @@ const items = itemList.querySelectorAll('li');
 
 function run() {
   //className
-
   // console.log(itemList.className);
   // text.className = 'card dark';
 
-  //classList
-  console.log(itemList.classList);
+  // //classList
+  // console.log(itemList.classList);
+
+  itemList.classList.forEach((c) => console.log(c));
+
+  text.classList.toggle('hidden');
 
 }
 
