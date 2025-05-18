@@ -22,4 +22,4 @@ function onSubmit2 (e) {
   console.log(formData);
 }
 
-form.addEventListener('submit', onSubmit)
+form.addEventListener('submit', onSubmit);
