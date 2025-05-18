@@ -13,16 +13,25 @@ const onKeyDown = (e) => {
   // console.log(e.key);
   // document.querySelector('h1').innerText = e.key;
 
-  if (e.key === 'Enter') {
-    alert('You pressed enter')
-  };
+  // if (e.key === 'Enter') {
+  //   alert('You pressed enter')
+  // }
 
   // keyCode
-
+  //https://www.toptal.com/developers/keycode/table
+  if (e.keyCode === 13) {
+    alert('You pressed enter')
+  } 
   // code
-  console.log('keyup');
+  if (e.code === 'Digit1') {
+    console.log('You pressed 1')
+  }
+
+  // if(e.repeat) {
+  //   console.log('You are holding down ' + e.key);
+  // }
 };
 
 
 // itemInput.addEventListener('keypress', onKeyPress);
-itemInput.addEventListener('keyup', onKeyDown);
+itemInput.addEventListener('keydown', onKeyDown);
