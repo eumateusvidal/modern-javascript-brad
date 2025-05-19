@@ -1,14 +1,15 @@
-const listItems = document.querySelectorAll('li');
-const list = document.querySelector('ul');
+// window.onload = function() {
+//   document.querySelector('h1').textContent = 'Hello World';
+// };
 
-// listItems.forEach(item => {
-//   item.addEventListener('click', (e) => {
-//     e.target.remove();
-//   });
-// });
+// window.addEventListener(
+//   'load',
+//   () => (document.querySelector('h1').textContent = 'Hello World')
+// );
 
-list.addEventListener('click', (e) => {
-  if(e.target.tagName === 'LI') {
-    e.target.style.color = 'red';
-  }
-});
+window.addEventListener(
+  'DOMContentLoaded',
+  () => (document.querySelector('h1').textContent = 'Hello World')
+);
+
+
