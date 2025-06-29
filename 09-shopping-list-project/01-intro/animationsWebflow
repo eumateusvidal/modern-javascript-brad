@@ -40,13 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define section IDs for sequential animations
     const sectionIds = [
       'header',
+      'services',
+      'works',
       'about',
-      'product',
-      'how-it-works',
-			'industries',
-			'integrations',
-			'pricing',
-			'faq'
+			'testimonials'
       // Add more section IDs as needed
     ];
     
