@@ -1,8 +1,8 @@
 // Ways to declare a variable
-//var, let, const
+// var, let, const
 
-let firstName = 'Matt';
-let lastName = 'Vidal';
+let firstName = 'John';
+let lastName = 'Doe';
 
 console.log(firstName, lastName);
 
@@ -10,9 +10,9 @@ let age = 30;
 
 console.log(age);
 
-//Naming Conventions
-// - Only letters, numbers, underscores and dollar signs
-//- Can't start with a number
+// Naming Conventions
+// - Only letters, numbers, underscores and dollars signs
+// - Can't start with a number
 
 // Multi-Word Formatting
 // firstName = camelCase
@@ -20,7 +20,7 @@ console.log(age);
 // FirstName = PascalCase
 // firstname = lowercase
 
-// Re-assigning Variables
+// Re-assign Variables
 
 age = 31;
 
@@ -33,39 +33,26 @@ score = 1;
 console.log(score);
 
 if (true) {
-  score = score +1;
+  score = score + 1;
 }
 
 console.log(score);
 
-
 const x = 100;
-
-const arr = [1, 2, 3, 4];
-
-arr.push(5);
-
-console.log(arr);
 
 const person = {
   name: 'Brad',
 };
 
 person.name = 'John';
-
-person.email = 'john@gmail.com';
-
-person.phoneNumber = 71999999999;
+person.email = 'brad@gmail.com';
 
 console.log(person);
 
-// Declare multiples value at once
+// Declare multiples values at once
 
-let a, b, c;
+let a, b, c; 
 
-const d = 10,
+const d = 10, e = 20, f = 30;
 
-  e = 20,
-  f = 30;
-
-  console.log(d + e - f);
+console.log(d);
