@@ -1,20 +1,22 @@
-let amount = 1;
+let amount = 0;
 
-
-//Change string to number
-// amount = parseInt(amount)
+// Convert the string to number
+// amount = parseInt(amount);
 // amount = +amount;
 // amount = Number(amount);
 
-//Change number to string
+// Convert the number to string
 // amount = amount.toString();
 // amount = String(amount);
 
-//Change string to decimals
+
+// Convert string to decimal
 // amount = parseFloat(amount);
 
-//Convert number to boolean
+// Convert number to boolean
+// amount = Boolean(amount);
 
-amount = Boolean(amount);
+
+
 
 console.log(amount, typeof amount);

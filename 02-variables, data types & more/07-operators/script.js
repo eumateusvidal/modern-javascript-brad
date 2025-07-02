@@ -1,4 +1,4 @@
-//1. Arithmetic Operators
+// 1 Arithmetic Operators
 
 let x;
 
@@ -8,25 +8,23 @@ x = 5 * 5;
 x = 5 / 5;
 x = 7 % 5;
 
-// 2. Concatenation
-x = 'Hello' + ' ' + 'World';
+// Concatenation
 
-// 3. Exponent
+x = 'Hello ' + 'World';
+
+// Exponent 
 x = 2 ** 3;
 
-// 4. Increment
+// Increment 
 x = 1;
-// x = x + 1;
 x++;
 
-// 5. Decrement 
-// x = x - 1;
-x--;
+// Decrement 
+x--
 
-// 6. Assigment Operators 
+// Assigment Operators
 
 x = 10;
-
 x += 5;
 x -= 5;
 x *= 5;
@@ -34,20 +32,10 @@ x /= 5;
 x %= 5;
 x **= 5;
 
-// 7. Comparison Operators
+// 3. Comparison Operators 
 
-x = 2 == 2;
-
-x = 2 === 2;
-
-x = 2 != '2';
-
-x = 2 !== 2;
-
-
-x = 10 > 5;
-x = 10 < 5;
-x = 10 <= 5;
-x = 10 >= 5;
+x = 2 == '2';
+x = 2 === '2';
+x = 2 != 2;
 
 console.log(x);
