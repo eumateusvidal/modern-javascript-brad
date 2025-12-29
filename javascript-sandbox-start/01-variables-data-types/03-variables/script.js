@@ -51,3 +51,13 @@ const person = {
 person.name = 'John';
 
 console.log(person);
+
+// Declare multiple values at once
+
+let a, b, c;
+
+const d = 10,
+  e = 20,
+  f = 30;
+
+console.log(d);
