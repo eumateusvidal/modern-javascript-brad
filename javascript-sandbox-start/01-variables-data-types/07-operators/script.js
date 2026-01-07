@@ -52,3 +52,5 @@ x = 10 > '2';
 x = 10 < '3';
 
 console.log(x);
+
+// test
