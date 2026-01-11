@@ -30,6 +30,10 @@ x = s.charAt(0);
 x = s.indexOf('l');
 
 x = s.substring(1, 3);
+
 x = s.slice(-1);
+
+x = x.trim();
+x = s.replace('World, John');
 
 console.log(x);
