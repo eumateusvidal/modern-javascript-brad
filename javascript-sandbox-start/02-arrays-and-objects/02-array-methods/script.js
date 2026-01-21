@@ -23,9 +23,11 @@ x = arr.includes(26);
 // It gives the index of an specific value
 x = arr.indexOf(30);
 
-//
-x = arr.slice(1);
+// //
+// x = arr.slice(1);
 
-x = arr.splice(1);
+// x = arr.splice(1);
+
+x = arr.splice(1, 3).reverse;
 
 console.log(x, arr);
