@@ -23,9 +23,13 @@ x = arr.includes(22);
 // It gives the index of an specific value
 x = arr.indexOf(22);
 
-x = arr.slice(1, 4);
+// x = arr.slice(1, 4);
 // x = arr.splice(1, 4);
+
+// x = arr.splice(3, 1);
 
 // //
 
-console.log(x, arr);
+x = arr.splice(1, 4).reverse().toString().charAt();
+
+console.log(x);
