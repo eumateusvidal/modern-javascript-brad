@@ -1,6 +1,6 @@
 let x;
 
-const arr = [30, 26, 40, 56];
+const arr = [7, 22, 56, 90, 99];
 
 // Add an value in the end
 arr.push(100);
@@ -9,7 +9,7 @@ arr.push(100);
 arr.pop();
 
 // Add a value in the beginning
-arr.unshift(7);
+arr.unshift(4);
 
 // Remove a value in the beginning
 arr.shift();
@@ -18,16 +18,14 @@ arr.shift();
 // arr.reverse();
 
 // To verify if a value is in the array (returns true or false)
-x = arr.includes(26);
+x = arr.includes(22);
 
 // It gives the index of an specific value
-x = arr.indexOf(30);
+x = arr.indexOf(22);
+
+x = arr.slice(1, 4);
+// x = arr.splice(1, 4);
 
 // //
-// x = arr.slice(1);
-
-// x = arr.splice(1);
-
-x = arr.splice(1, 3).reverse;
 
 console.log(x, arr);
