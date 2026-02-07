@@ -30,6 +30,6 @@ const {
 
 const numbers = [23, 67, 33, 49];
 
-const [first, second] = numbers;
+const [first, second, ...rest] = numbers;
 
-console.log(numbers);
+console.log(first, second, rest);
