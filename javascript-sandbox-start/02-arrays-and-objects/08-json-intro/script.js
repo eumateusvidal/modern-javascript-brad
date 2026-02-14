@@ -7,4 +7,7 @@ const post = {
 // Convert to JSON string
 const str = JSON.stringify(post);
 
-console.log(str);
+// Parse JSON
+const obj = JSON.parse(str);
+
+console.log(obj);
