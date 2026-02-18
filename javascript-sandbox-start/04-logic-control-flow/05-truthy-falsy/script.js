@@ -18,7 +18,7 @@
 // - {} {empty object}
 // - function () {} (empty function)
 
-const x = NaN;
+const x = function () {};
 
 if (x) {
   console.log('This is truthy');
@@ -27,3 +27,33 @@ if (x) {
 }
 
 console.log(Boolean(x));
+
+// Truthy and falsy caveats
+
+const children = 3;
+
+if (!isNaN(children)) {
+  console.log(`You have ${children} children`);
+} else {
+  console.log(`Please enter number of children`);
+}
+
+// Check for empty arrays
+
+const posts = [];
+
+if (posts.length > 0) {
+  console.log('List Posts');
+} else {
+  console.log('No Posts');
+}
+
+// Check for empty objects
+
+const user = {};
+
+if (Object.keys(user).length > 0) {
+  console.log('List user');
+} else {
+  console.log('No user');
+}
