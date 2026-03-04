@@ -19,4 +19,6 @@ parent.lastChild.textContent = 'Maitê';
 
 const child = document.querySelector('.child');
 
+output;
+
 console.log(output);
