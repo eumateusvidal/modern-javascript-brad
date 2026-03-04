@@ -33,6 +33,8 @@ const companyNames = companies.map((company) => company.name);
 
 // console.log(companyNames);
 
+// Create an array with just company and category
+
 const companyInfo = companies.map((company) => {
   return {
     name: company.name,
@@ -41,3 +43,7 @@ const companyInfo = companies.map((company) => {
 });
 
 console.log(companyInfo);
+
+// Create an array of objects with the sane and the lenght of each company in years
+
+const companyTime = companies.map((company) => company.end - company.start);

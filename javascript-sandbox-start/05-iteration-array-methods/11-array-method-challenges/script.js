@@ -37,5 +37,13 @@ const people = [
   },
 ];
 
+const youngPeople = people
+  .filter((person) => person.age <= 25)
+  .map((person) => ({
+    name: person.firstName + ' ' + person.lastName,
+    email: person.email,
+  }));
+console.log(youngPeople);
+
 // Challenge 2
 const numbers = [2, -30, 50, 20, -12, -9, 7];
